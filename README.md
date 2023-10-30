@@ -1,5 +1,37 @@
 # Counter API using Golang
 
+## Running project locally
+
+```shell
+$ go run api.go
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:   export GIN_MODE=release
+ - using code:  gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /status                   --> counter-api/controllers.UpdateStatus (4 handlers)
+[GIN-debug] GET    /shutdown                 --> counter-api/controllers.Shutdown (4 handlers)
+[GIN-debug] GET    /poweron                  --> counter-api/controllers.PowerOn (4 handlers)
+[GIN-debug] Listening and serving HTTP on :40000
+```
+
+To change the default port use `GOPORT` env variable
+
+```shell
+$ GOPORT=7777 go run api.go
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:   export GIN_MODE=release
+ - using code:  gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /status                   --> counter-api/controllers.UpdateStatus (4 handlers)
+[GIN-debug] GET    /shutdown                 --> counter-api/controllers.Shutdown (4 handlers)
+[GIN-debug] GET    /poweron                  --> counter-api/controllers.PowerOn (4 handlers)
+[GIN-debug] Listening and serving HTTP on :7777
+```
+
 ## Running tests
 
 ```shell
