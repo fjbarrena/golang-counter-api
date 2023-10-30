@@ -9,10 +9,9 @@ import (
 )
 
 func main() {
-
 	r := gin.Default()
 
-	// Allow CORS requests
+	// Allow CORS requests (comment if not needed)
 	r.Use(cors.New(cors.Config{
 		AllowAllOrigins: true,
 		AllowWildcard:   true,
