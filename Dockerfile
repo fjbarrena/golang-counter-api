@@ -22,5 +22,6 @@ WORKDIR /
 COPY --from=build /counter-api /counter-api
 
 ENV GOPORT 40000
+ENV GIN_MODE release
 
 ENTRYPOINT ["/counter-api"]
