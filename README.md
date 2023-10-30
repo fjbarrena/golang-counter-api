@@ -1,5 +1,15 @@
 # Counter API using Golang
 
+## Running tests
+
+```shell
+$ go test -cover ./...
+?       counter-api     [no test files]
+?       counter-api/models      [no test files]
+?       counter-api/controllers [no test files]
+ok      counter-api/services    0.001s  coverage: 100.0% of statements
+```
+
 ## Building Docker image
 
 ```shell
