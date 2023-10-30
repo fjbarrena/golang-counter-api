@@ -48,6 +48,8 @@ ok      counter-api/services    0.001s  coverage: 100.0% of statements
 docker build -t counter-api:latest .
 ```
 
+[Check out the image at Docker Hub](https://hub.docker.com/r/fjbarrena/counter-api/tags)
+
 ## Running Docker image
 
 ```shell
