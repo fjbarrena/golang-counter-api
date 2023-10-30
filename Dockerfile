@@ -4,11 +4,13 @@ FROM golang:1.20.10-alpine3.17 AS build
 
 WORKDIR /app
 
-
 COPY go.mod .
 RUN go mod download
 
 COPY *.go .
+COPY controllers ./controllers
+COPY models ./models 
+COPY services ./services
 
 RUN go get counter-api
 RUN go build -o /counter-api
